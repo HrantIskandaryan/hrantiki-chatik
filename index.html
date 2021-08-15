@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<!-- firebase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.9.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+
+
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-8">
+          <div class="messages-list d-none">
+          <h2>Messages</h2>
+          <ul class="list-group"></ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="users-list d-none">
+          <h2>Users</h2>
+          <ul class="list-group"></ul>
+           </div>
+           <div class="login-form-container">
+             <form class="login-form">
+               <div class="form-group">
+                 <label for="nickname">Nickname</label>
+                 <input type="text" id="nickname">
+               </div>
+               <button type="submit" class="btn btn-primary w-100">Login</button>
+             </form>
+           </div>
+        </div>
+      </div>
+      <div class="message-form-container fixed-bottom">
+        <form class="message-form ml-2 mr-2 d-none">
+          <div class="form-row">
+            <div class="col-10">
+              <input id="message" type="text" class="form-control" placeholder="message"/>
+            </div>
+            <div class="col-2">
+              <button type="submit" class="btn btn-primary w-100">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+  </html>
